@@ -110,9 +110,7 @@ function updatePackageVersion(packageJsonPath: string, newVersion: string): Pack
 function getRootDir(): string {
   // Support both CommonJS and ES modules
   try {
-    // @ts-expect-error - __dirname may not exist in ESM
     if (typeof __dirname !== 'undefined') {
-      // @ts-expect-error - __dirname may not exist in ESM
       return path.resolve(__dirname, '..');
     }
   } catch {

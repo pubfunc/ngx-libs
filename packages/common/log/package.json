@@ -1,16 +1,7 @@
 {
   "name": "@pubfunc/ngx-common-log",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^21.0.0",
-    "@angular/core": "^21.0.0",
-    "luxon": "^3.7.2"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false,
-  "license": "MIT",
+  "description": "A flexible logging library for Angular applications with support for multiple transports, log levels, namespaces, and dependency injection.",
   "keywords": [
     "angular",
     "logging",
@@ -19,12 +10,28 @@
     "common",
     "pubfunc"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pubfunc/ngx-libs.git"
-  },
+  "homepage": "https://github.com/pubfunc/ngx-libs/tree/master/packages/common/log",
   "bugs": {
     "url": "https://github.com/pubfunc/ngx-libs/issues"
   },
-  "homepage": "https://github.com/pubfunc/ngx-libs/tree/master/packages/common/log"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubfunc/ngx-libs.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "luxon": "^3.7.2"
+  },
+  "sideEffects": false
 }
