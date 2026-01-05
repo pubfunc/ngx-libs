@@ -2,4 +2,4 @@
 
 Common libraries for Angular:
 
-- **[Log](packages/common/log)**: Structured, injectable logger for browser and server.
+- **[@pubfunc/ngx-common-log](packages/common/log)**: Structured, injectable logger for browser and server.

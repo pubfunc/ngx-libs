@@ -9,5 +9,22 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "logging",
+    "logger",
+    "log",
+    "common",
+    "pubfunc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pubfunc/ngx-libs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pubfunc/ngx-libs/issues"
+  },
+  "homepage": "https://github.com/pubfunc/ngx-libs/tree/master/packages/common/log"
 }
