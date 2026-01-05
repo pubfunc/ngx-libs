@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "version:bump": "npx tsx scripts/bump-version.ts patch",
+    "version:bump:patch": "npx tsx scripts/bump-version.ts patch",
+    "version:bump:minor": "npx tsx scripts/bump-version.ts minor",
+    "version:bump:major": "npx tsx scripts/bump-version.ts major"
   },
   "prettier": {
     "printWidth": 100,
@@ -41,6 +45,7 @@
     "jsdom": "^27.1.0",
     "ng-packagr": "^21.0.0",
     "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
