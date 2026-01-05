@@ -1,17 +1,13 @@
-import { InjectionToken } from '@angular/core';
-import { ILogObject, ILogger, ILogTransport, LogFn, LogLevel } from './types';
+import { ILogObject, ILogger, ILogTransport, LogLevel } from './types';
+import { DEFAULT_TRANSPORT } from './provide';
 
-export const LOGGER = new InjectionToken<ILogger>('LOGGER');
-
-const DEFAULT_TRANSPORT: ILogTransport = { push: console.log };
-
-class RootLogger implements ILogger {
+export class Logger implements ILogger {
   private configured = false;
 
   constructor(
-    private level: LogLevel = LogLevel.DEBUG,
-    private namespace: string = 'App',
-    private transport: ILogTransport = DEFAULT_TRANSPORT,
+    private level: LogLevel,
+    public namespace: string,
+    private transport: ILogTransport,
   ) {}
 
   configure(options: { namespace?: string; transport?: ILogTransport; level?: LogLevel }) {
@@ -94,4 +90,4 @@ class ChildLogger implements ILogger {
   }
 }
 
-export const Log = new RootLogger();
+export const Log = new Logger(LogLevel.DEBUG, 'App', DEFAULT_TRANSPORT);
